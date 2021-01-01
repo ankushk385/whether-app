@@ -25,9 +25,10 @@ const Home = () => {
           <div className="search">
             <input
               type="search"
-              placeholder="type your location"
+              placeholder="Your Location..."
               onChange={(event) => setSearch(event.target.value)}
             />
+            <i className="fa fa-search fa-lg si" aria-hidden="true"></i>
           </div>
           {!city || !country ? (
             <div>
@@ -37,7 +38,10 @@ const Home = () => {
             <div>
               <div className="info">
                 <h2 className="location">
-                  <i className="fas fa-street-view capt"> {search}</i>
+                  <i class="fa fa-globe" aria-hidden="true">
+                    {" "}
+                    {search}
+                  </i>
                 </h2>
 
                 <h2 className="temperature">

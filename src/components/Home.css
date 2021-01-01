@@ -14,6 +14,15 @@
     #ffc75f,
     #f9f871
   );
+  --colors: linear-gradient(
+    45deg,
+    #362650,
+    #502543,
+    #442028,
+    #583528,
+    #5e4a25,
+    #4e4e25
+  );
 }
 
 .container {
@@ -46,9 +55,11 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  justify-content: space-between;
+
+  transition: all 0.2s ease-in-out;
 }
 .box:hover {
+  transform: scale(1.1);
 }
 .capt {
   text-transform: capitalize;
@@ -59,6 +70,23 @@
   margin-top: 40px;
   font-size: 2.4rem;
 }
+input {
+  width: 100%;
+  padding: 9px;
+  font-size: 1.3rem;
+  color: black;
+  border: 2px solid black;
+  margin-bottom: 90px;
+  margin-right: 9px;
+}
+.si {
+  margin-top: 10px;
+}
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (max-width: 480px) {
   .container {
     font-size: 1rem;
